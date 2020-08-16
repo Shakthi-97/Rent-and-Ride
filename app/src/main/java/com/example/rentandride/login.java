@@ -1,28 +1,36 @@
 package com.example.rentandride;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class login extends AppCompatActivity {
 
     Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        btn = findViewById(R.id.btnok);
+        btn = findViewById(R.id.logbtn);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this ,login.class);
+                Intent intent = new Intent(login.this , MyBookings.class);
+                startActivity(intent);
+            }
+        });
+
+        btn = findViewById(R.id.regbtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(login.this , MyBookings.class);
                 startActivity(intent);
             }
         });
     }
 }
-
-

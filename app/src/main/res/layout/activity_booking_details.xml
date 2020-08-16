@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingDetails">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#545481"
+
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/My_Booking"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            app:drawableEndCompat="@drawable/edit"
+            app:drawableStartCompat="@drawable/arback" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="479dp"
+        android:text="@string/Pick_up_Details"
+        android:textColor="#545481"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="266dp"
+        android:text="@string/Drop_off_Details"
+        android:textColor="#545481"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="367dp"
+        android:drawableStart="@drawable/ic_action_date2"
+        android:ems="10"
+        android:text="@string/Pickup_Date_detail"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextTime3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:drawableStart="@drawable/ic_action_time"
+        android:layout_marginBottom="309dp"
+        android:ems="10"
+        android:text="@string/Pickup_Time_detail"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editTextDate4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="31dp"
+        android:drawableStart="@drawable/ic_action_date2"
+        android:layout_marginBottom="142dp"
+        android:ems="10"
+        android:text="@string/Dropoff_Date_detail"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextTime4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:drawableStart="@drawable/ic_action_time"
+        android:layout_marginBottom="78dp"
+        android:ems="10"
+        android:text="@string/Dropoff_Time_detail"
+        android:inputType="time" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="14dp"
+        android:background="#545481"
+        android:drawableEnd="@drawable/delete"
+        android:text="@string/Cancel"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="13dp"
+        android:background="#545481"
+        android:drawableEnd="@drawable/next"
+        android:text="@string/Next"
+        android:textSize="20sp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="424dp"
+        android:drawableStart="@drawable/ic_action_pickup"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Pickup_Location_deatil" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="213dp"
+        android:drawableStart="@drawable/ic_action_pickup"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Dropoff_Location_deatil" />
+
+
+</RelativeLayout>
