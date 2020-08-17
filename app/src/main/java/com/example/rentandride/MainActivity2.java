@@ -1,6 +1,8 @@
 package com.example.rentandride;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
 
@@ -8,6 +10,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.core.view.GravityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -39,7 +42,7 @@ public class MainActivity2 extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.account, R.id.bookings, R.id.notifications, R.id.trips, R.id.feedbacks, R.id.logout)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -59,5 +62,28 @@ public class MainActivity2 extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public boolean onNavigationItemSelected(MenuItem item){
+
+        int id = item.getItemId();
+
+        if(id == R.id.account){
+            startActivity(new Intent(MainActivity2.this, MainActivity3.class));
+        }else if(id == R.id.bookings){
+            startActivity(new Intent(MainActivity2.this, MyBookings.class));
+        }else if(id == R.id.notifications){
+
+        }else if(id == R.id.trips){
+            startActivity(new Intent(MainActivity2.this, pastTrips.class));
+        }else if(id == R.id.feedbacks){
+            startActivity(new Intent(MainActivity2.this, promotion.class));
+        }else if (id == R.id.logout){
+            startActivity(new Intent(MainActivity2.this, login.class));
+        }
+
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
     }
 }

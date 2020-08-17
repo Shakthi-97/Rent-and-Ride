@@ -19,7 +19,7 @@ public class login extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(login.this , MyBookings.class);
+                Intent intent = new Intent(login.this , MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -28,7 +28,7 @@ public class login extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(login.this , MyBookings.class);
+                Intent intent = new Intent(login.this , MainActivity4.class);
                 startActivity(intent);
             }
         });

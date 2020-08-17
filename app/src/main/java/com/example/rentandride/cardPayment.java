@@ -7,18 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity5 extends AppCompatActivity {
+public class cardPayment extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.activity_card_payment);
 
-        Button button = (Button) findViewById(R.id.detail1);
+
+        Button button = (Button) findViewById(R.id.btn6);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity5.this, createDriver.class);
+                Intent intent = new Intent(cardPayment.this, promocode.class);
                 startActivity(intent);
             }
         });

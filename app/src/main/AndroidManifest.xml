@@ -15,7 +15,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity7"></activity>
+        <activity android:name=".createFeedback"></activity>
+        <activity android:name=".payMethod" />
+        <activity android:name=".promotion" />
+        <activity android:name=".promocode" />
+        <activity android:name=".cardPay" />
+        <activity android:name=".cardPayment" />
+        <activity android:name=".addPromoCode" />
+        <activity android:name=".review" />
+        <activity android:name=".pastTrips" />
+        <activity android:name=".editDriver" />
+        <activity android:name=".viewDriver" />
+        <activity android:name=".createDriver" />
+        <activity android:name=".MainActivity7" />
         <activity android:name=".MainActivity6" />
         <activity android:name=".MainActivity5" />
         <activity android:name=".MainActivity3" />
@@ -40,8 +52,8 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".BookingDetails" />
         <activity android:name=".MyBookings" />
-        <activity android:name=".login" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
