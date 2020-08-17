@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#545481"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Rent Ride"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageview_dehaze"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_baseline_dehaze_24"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:layout_width="347dp"
+        android:layout_height="233dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/cars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/hyundai"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/passenger"
+        android:text="@string/passnegers"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/bag"
+        android:text="@string/bags"
+        android:drawableLeft="@drawable/ic_baseline_card_travel_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/wifi"
+        android:text="@string/wifi"
+        android:drawableLeft="@drawable/ic_baseline_wifi_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/flight"
+        android:text="@string/bus"
+        android:drawableLeft="@drawable/ic_baseline_flight_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hyundai"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/rate"
+        android:text="@string/rs"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:layout_marginRight="120dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="225dp"
+        android:background="#545481"
+        android:textColor="#fff"
+        android:text="@string/details" />
+
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="1dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Here"></SearchView>
+
+
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="207dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="281dp"
+        android:background="@drawable/cars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/honda"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/passen"
+        android:text="@string/passnegers"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/lagua"
+        android:text="@string/bags"
+        android:drawableLeft="@drawable/ic_baseline_card_travel_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/wi"
+        android:text="@string/wifi"
+        android:drawableLeft="@drawable/ic_baseline_wifi_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="460dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/flig"
+        android:text="@string/bus"
+        android:drawableLeft="@drawable/ic_baseline_flight_24"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:textColor="#000"
+        android:ems="10"/>
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:src="@drawable/honda1"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="410dp"/>
+    <TextView
+        android:id="@+id/rat"
+        android:text="@string/rupee"
+        android:drawablePadding="8dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="520dp"
+        android:layout_marginRight="110dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="540dp"
+        android:background="#545481"
+        android:text="@string/details"
+        android:textColor="#fff" />
+
+</RelativeLayout>
